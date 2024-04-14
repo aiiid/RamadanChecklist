@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E20356362BA1E3A0007F7BE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20356352BA1E3A0007F7BE1 /* AppDelegate.swift */; };
+		E20356382BA1E3A0007F7BE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20356372BA1E3A0007F7BE1 /* SceneDelegate.swift */; };
+		E203563A2BA1E3A0007F7BE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20356392BA1E3A0007F7BE1 /* ViewController.swift */; };
+		E203563F2BA1E3A3007F7BE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E203563E2BA1E3A3007F7BE1 /* Assets.xcassets */; };
+		E20356422BA1E3A3007F7BE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20356402BA1E3A3007F7BE1 /* LaunchScreen.storyboard */; };
+		E203564B2BA2AD0F007F7BE1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E203564A2BA2AD0F007F7BE1 /* SnapKit */; };
+		E203564D2BA2AE51007F7BE1 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203564C2BA2AE51007F7BE1 /* ImageCell.swift */; };
+		E203564F2BA2B689007F7BE1 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203564E2BA2B689007F7BE1 /* APIManager.swift */; };
+		E20356512BA2BBE3007F7BE1 /* PostImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20356502BA2BBE3007F7BE1 /* PostImages.swift */; };
+		E20356592BA2F5B6007F7BE1 /* moon_data.json in Resources */ = {isa = PBXBuildFile; fileRef = E20356582BA2F5B6007F7BE1 /* moon_data.json */; };
+		E203565C2BA2F608007F7BE1 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203565B2BA2F608007F7BE1 /* Day.swift */; };
+		E20356602BA2F676007F7BE1 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203565F2BA2F676007F7BE1 /* DataStorage.swift */; };
+		E2609DDF2BBCB41A005B5C32 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2609DDE2BBCB41A005B5C32 /* HomeVC.swift */; };
+		E2609DE12BBCB4CC005B5C32 /* ProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2609DE02BBCB4CC005B5C32 /* ProgressVC.swift */; };
+		E2609DE32BBCB6C4005B5C32 /* RCTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2609DE22BBCB6C4005B5C32 /* RCTitleLabel.swift */; };
+		E2609DE52BBCB7A4005B5C32 /* RCBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2609DE42BBCB7A4005B5C32 /* RCBodyLabel.swift */; };
+		E2609DE72BBCBF9E005B5C32 /* RCCaptionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2609DE62BBCBF9E005B5C32 /* RCCaptionLabel.swift */; };
+		E2609DEE2BBCC088005B5C32 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2609DED2BBCC088005B5C32 /* DayCell.swift */; };
+		E2609DF12BBCC0D9005B5C32 /* MoonPhaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2609DF02BBCC0D9005B5C32 /* MoonPhaseView.swift */; };
+		E2609DF42BBCC6A7005B5C32 /* RCCalendarViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2609DF32BBCC6A7005B5C32 /* RCCalendarViewVC.swift */; };
+		E2609DF72BBEBA79005B5C32 /* RCHeaderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2609DF62BBEBA79005B5C32 /* RCHeaderTextView.swift */; };
+		E2609DF92BBECD3A005B5C32 /* RCWeekCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2609DF82BBECD3A005B5C32 /* RCWeekCollectionView.swift */; };
+		E2609DFB2BBED341005B5C32 /* RCWeekInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2609DFA2BBED341005B5C32 /* RCWeekInfoView.swift */; };
+		E2609DFE2BBF50D8005B5C32 /* RCCircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2609DFD2BBF50D8005B5C32 /* RCCircularProgressBar.swift */; };
+		E28EE5C62BA32613001CDEE2 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28EE5C52BA32613001CDEE2 /* Month.swift */; };
+		E28EE5CC2BA376BF001CDEE2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28EE5CB2BA376BF001CDEE2 /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E20356322BA1E3A0007F7BE1 /* Ramadan Checklist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ramadan Checklist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E20356352BA1E3A0007F7BE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E20356372BA1E3A0007F7BE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E20356392BA1E3A0007F7BE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E203563E2BA1E3A3007F7BE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E20356412BA1E3A3007F7BE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E20356432BA1E3A3007F7BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E203564C2BA2AE51007F7BE1 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		E203564E2BA2B689007F7BE1 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		E20356502BA2BBE3007F7BE1 /* PostImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImages.swift; sourceTree = "<group>"; };
+		E20356582BA2F5B6007F7BE1 /* moon_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = moon_data.json; sourceTree = "<group>"; };
+		E203565B2BA2F608007F7BE1 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		E203565F2BA2F676007F7BE1 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		E2609DDE2BBCB41A005B5C32 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		E2609DE02BBCB4CC005B5C32 /* ProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressVC.swift; sourceTree = "<group>"; };
+		E2609DE22BBCB6C4005B5C32 /* RCTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTitleLabel.swift; sourceTree = "<group>"; };
+		E2609DE42BBCB7A4005B5C32 /* RCBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCBodyLabel.swift; sourceTree = "<group>"; };
+		E2609DE62BBCBF9E005B5C32 /* RCCaptionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCCaptionLabel.swift; sourceTree = "<group>"; };
+		E2609DED2BBCC088005B5C32 /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
+		E2609DF02BBCC0D9005B5C32 /* MoonPhaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonPhaseView.swift; sourceTree = "<group>"; };
+		E2609DF32BBCC6A7005B5C32 /* RCCalendarViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCCalendarViewVC.swift; sourceTree = "<group>"; };
+		E2609DF62BBEBA79005B5C32 /* RCHeaderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCHeaderTextView.swift; sourceTree = "<group>"; };
+		E2609DF82BBECD3A005B5C32 /* RCWeekCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCWeekCollectionView.swift; sourceTree = "<group>"; };
+		E2609DFA2BBED341005B5C32 /* RCWeekInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCWeekInfoView.swift; sourceTree = "<group>"; };
+		E2609DFD2BBF50D8005B5C32 /* RCCircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCCircularProgressBar.swift; sourceTree = "<group>"; };
+		E28EE5C52BA32613001CDEE2 /* Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
+		E28EE5CB2BA376BF001CDEE2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E203562F2BA1E3A0007F7BE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E203564B2BA2AD0F007F7BE1 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E20356292BA1E3A0007F7BE1 = {
+			isa = PBXGroup;
+			children = (
+				E20356342BA1E3A0007F7BE1 /* Ramadan Checklist */,
+				E20356332BA1E3A0007F7BE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E20356332BA1E3A0007F7BE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E20356322BA1E3A0007F7BE1 /* Ramadan Checklist.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E20356342BA1E3A0007F7BE1 /* Ramadan Checklist */ = {
+			isa = PBXGroup;
+			children = (
+				E2609DEA2BBCC050005B5C32 /* Custom Views */,
+				E2609DE82BBCC00C005B5C32 /* Screens */,
+				E28EE5CA2BA376AE001CDEE2 /* Extensions */,
+				E203565A2BA2F5DE007F7BE1 /* DataAccess */,
+				E20356572BA2F51C007F7BE1 /* Network */,
+				E20356552BA2F4F9007F7BE1 /* Model */,
+				E20356352BA1E3A0007F7BE1 /* AppDelegate.swift */,
+				E20356372BA1E3A0007F7BE1 /* SceneDelegate.swift */,
+				E203563E2BA1E3A3007F7BE1 /* Assets.xcassets */,
+				E20356402BA1E3A3007F7BE1 /* LaunchScreen.storyboard */,
+				E20356432BA1E3A3007F7BE1 /* Info.plist */,
+			);
+			path = "Ramadan Checklist";
+			sourceTree = "<group>";
+		};
+		E20356552BA2F4F9007F7BE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E203565B2BA2F608007F7BE1 /* Day.swift */,
+				E28EE5C52BA32613001CDEE2 /* Month.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E20356572BA2F51C007F7BE1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E203564E2BA2B689007F7BE1 /* APIManager.swift */,
+				E20356502BA2BBE3007F7BE1 /* PostImages.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E203565A2BA2F5DE007F7BE1 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				E20356582BA2F5B6007F7BE1 /* moon_data.json */,
+				E203565F2BA2F676007F7BE1 /* DataStorage.swift */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		E2609DE82BBCC00C005B5C32 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E2609DDE2BBCB41A005B5C32 /* HomeVC.swift */,
+				E2609DE02BBCB4CC005B5C32 /* ProgressVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E2609DEA2BBCC050005B5C32 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2609DFC2BBF005E005B5C32 /* Buttons */,
+				E2609DF52BBEBA20005B5C32 /* Views */,
+				E2609DF22BBCC680005B5C32 /* VC */,
+				E2609DEF2BBCC0C2005B5C32 /* ImageViews */,
+				E2609DEC2BBCC068005B5C32 /* Cells */,
+				E2609DEB2BBCC05D005B5C32 /* Labels */,
+				E20356392BA1E3A0007F7BE1 /* ViewController.swift */,
+				E203564C2BA2AE51007F7BE1 /* ImageCell.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		E2609DEB2BBCC05D005B5C32 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				E2609DE22BBCB6C4005B5C32 /* RCTitleLabel.swift */,
+				E2609DE42BBCB7A4005B5C32 /* RCBodyLabel.swift */,
+				E2609DE62BBCBF9E005B5C32 /* RCCaptionLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		E2609DEC2BBCC068005B5C32 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E2609DED2BBCC088005B5C32 /* DayCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E2609DEF2BBCC0C2005B5C32 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				E2609DF02BBCC0D9005B5C32 /* MoonPhaseView.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		E2609DF22BBCC680005B5C32 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				E2609DF32BBCC6A7005B5C32 /* RCCalendarViewVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		E2609DF52BBEBA20005B5C32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2609DF62BBEBA79005B5C32 /* RCHeaderTextView.swift */,
+				E2609DF82BBECD3A005B5C32 /* RCWeekCollectionView.swift */,
+				E2609DFA2BBED341005B5C32 /* RCWeekInfoView.swift */,
+				E2609DFD2BBF50D8005B5C32 /* RCCircularProgressBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E2609DFC2BBF005E005B5C32 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		E28EE5CA2BA376AE001CDEE2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E28EE5CB2BA376BF001CDEE2 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E20356312BA1E3A0007F7BE1 /* Ramadan Checklist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E20356462BA1E3A3007F7BE1 /* Build configuration list for PBXNativeTarget "Ramadan Checklist" */;
+			buildPhases = (
+				E203562E2BA1E3A0007F7BE1 /* Sources */,
+				E203562F2BA1E3A0007F7BE1 /* Frameworks */,
+				E20356302BA1E3A0007F7BE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ramadan Checklist";
+			packageProductDependencies = (
+				E203564A2BA2AD0F007F7BE1 /* SnapKit */,
+			);
+			productName = "Ramadan Checklist";
+			productReference = E20356322BA1E3A0007F7BE1 /* Ramadan Checklist.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E203562A2BA1E3A0007F7BE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					E20356312BA1E3A0007F7BE1 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = E203562D2BA1E3A0007F7BE1 /* Build configuration list for PBXProject "Ramadan Checklist" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E20356292BA1E3A0007F7BE1;
+			packageReferences = (
+				E20356492BA2AD0F007F7BE1 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = E20356332BA1E3A0007F7BE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E20356312BA1E3A0007F7BE1 /* Ramadan Checklist */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E20356302BA1E3A0007F7BE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E20356592BA2F5B6007F7BE1 /* moon_data.json in Resources */,
+				E20356422BA1E3A3007F7BE1 /* LaunchScreen.storyboard in Resources */,
+				E203563F2BA1E3A3007F7BE1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E203562E2BA1E3A0007F7BE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2609DE32BBCB6C4005B5C32 /* RCTitleLabel.swift in Sources */,
+				E203565C2BA2F608007F7BE1 /* Day.swift in Sources */,
+				E2609DE12BBCB4CC005B5C32 /* ProgressVC.swift in Sources */,
+				E203563A2BA1E3A0007F7BE1 /* ViewController.swift in Sources */,
+				E28EE5C62BA32613001CDEE2 /* Month.swift in Sources */,
+				E2609DE52BBCB7A4005B5C32 /* RCBodyLabel.swift in Sources */,
+				E2609DEE2BBCC088005B5C32 /* DayCell.swift in Sources */,
+				E2609DE72BBCBF9E005B5C32 /* RCCaptionLabel.swift in Sources */,
+				E2609DF72BBEBA79005B5C32 /* RCHeaderTextView.swift in Sources */,
+				E203564D2BA2AE51007F7BE1 /* ImageCell.swift in Sources */,
+				E20356602BA2F676007F7BE1 /* DataStorage.swift in Sources */,
+				E28EE5CC2BA376BF001CDEE2 /* Extensions.swift in Sources */,
+				E2609DFB2BBED341005B5C32 /* RCWeekInfoView.swift in Sources */,
+				E203564F2BA2B689007F7BE1 /* APIManager.swift in Sources */,
+				E2609DDF2BBCB41A005B5C32 /* HomeVC.swift in Sources */,
+				E2609DF12BBCC0D9005B5C32 /* MoonPhaseView.swift in Sources */,
+				E20356512BA2BBE3007F7BE1 /* PostImages.swift in Sources */,
+				E20356362BA1E3A0007F7BE1 /* AppDelegate.swift in Sources */,
+				E2609DFE2BBF50D8005B5C32 /* RCCircularProgressBar.swift in Sources */,
+				E2609DF42BBCC6A7005B5C32 /* RCCalendarViewVC.swift in Sources */,
+				E20356382BA1E3A0007F7BE1 /* SceneDelegate.swift in Sources */,
+				E2609DF92BBECD3A005B5C32 /* RCWeekCollectionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E20356402BA1E3A3007F7BE1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E20356412BA1E3A3007F7BE1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E20356442BA1E3A3007F7BE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E20356452BA1E3A3007F7BE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E20356472BA1E3A3007F7BE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SD8XJ5V53F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ramadan Checklist/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Aida-Abdirakhman.Ramadan-Checklist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E20356482BA1E3A3007F7BE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SD8XJ5V53F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ramadan Checklist/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Aida-Abdirakhman.Ramadan-Checklist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E203562D2BA1E3A0007F7BE1 /* Build configuration list for PBXProject "Ramadan Checklist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E20356442BA1E3A3007F7BE1 /* Debug */,
+				E20356452BA1E3A3007F7BE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E20356462BA1E3A3007F7BE1 /* Build configuration list for PBXNativeTarget "Ramadan Checklist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E20356472BA1E3A3007F7BE1 /* Debug */,
+				E20356482BA1E3A3007F7BE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E20356492BA2AD0F007F7BE1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E203564A2BA2AD0F007F7BE1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E20356492BA2AD0F007F7BE1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E203562A2BA1E3A0007F7BE1 /* Project object */;
+}

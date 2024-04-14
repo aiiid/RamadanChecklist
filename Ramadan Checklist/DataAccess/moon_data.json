@@ -1,0 +1,29 @@
+{
+  "name": "Ramadan 2024",
+  "month": [
+    {
+    "id": 1,
+    "date": "2024-03-10",
+    "phase": "New Moon",
+    "emoji": "🌑"
+  },
+  {
+    "id": 2,
+    "date": "2024-03-11",
+    "phase": "Waxing Crescent Moon",
+    "emoji": "🌓"
+  },
+  {
+    "id": 3,
+    "date": "2024-03-12",
+    "phase": "Waxing Crescent Moon",
+    "emoji": "🌓"
+  },
+  {
+    "id": 4,
+    "date": "2024-03-13",
+    "phase": "Waxing Crescent Moon",
+    "emoji": "🌓"
+  }
+]
+}
