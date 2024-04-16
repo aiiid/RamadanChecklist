@@ -9,11 +9,9 @@
 /* Begin PBXBuildFile section */
 		E20356362BA1E3A0007F7BE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20356352BA1E3A0007F7BE1 /* AppDelegate.swift */; };
 		E20356382BA1E3A0007F7BE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20356372BA1E3A0007F7BE1 /* SceneDelegate.swift */; };
-		E203563A2BA1E3A0007F7BE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20356392BA1E3A0007F7BE1 /* ViewController.swift */; };
 		E203563F2BA1E3A3007F7BE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E203563E2BA1E3A3007F7BE1 /* Assets.xcassets */; };
 		E20356422BA1E3A3007F7BE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20356402BA1E3A3007F7BE1 /* LaunchScreen.storyboard */; };
 		E203564B2BA2AD0F007F7BE1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E203564A2BA2AD0F007F7BE1 /* SnapKit */; };
-		E203564D2BA2AE51007F7BE1 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203564C2BA2AE51007F7BE1 /* ImageCell.swift */; };
 		E203564F2BA2B689007F7BE1 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203564E2BA2B689007F7BE1 /* APIManager.swift */; };
 		E20356512BA2BBE3007F7BE1 /* PostImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20356502BA2BBE3007F7BE1 /* PostImages.swift */; };
 		E20356592BA2F5B6007F7BE1 /* moon_data.json in Resources */ = {isa = PBXBuildFile; fileRef = E20356582BA2F5B6007F7BE1 /* moon_data.json */; };
@@ -33,17 +31,18 @@
 		E2609DFE2BBF50D8005B5C32 /* RCCircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2609DFD2BBF50D8005B5C32 /* RCCircularProgressBar.swift */; };
 		E28EE5C62BA32613001CDEE2 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28EE5C52BA32613001CDEE2 /* Month.swift */; };
 		E28EE5CC2BA376BF001CDEE2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28EE5CB2BA376BF001CDEE2 /* Extensions.swift */; };
+		E2CC9B8C2BCEAEED006D0049 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC9B8B2BCEAEED006D0049 /* TodoCell.swift */; };
+		E2CC9B922BCEB1FF006D0049 /* RCTodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC9B912BCEB1FF006D0049 /* RCTodoListView.swift */; };
+		E2CC9B962BCEB7A2006D0049 /* RCTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC9B952BCEB7A2006D0049 /* RCTodoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E20356322BA1E3A0007F7BE1 /* Ramadan Checklist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ramadan Checklist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20356352BA1E3A0007F7BE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E20356372BA1E3A0007F7BE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E20356392BA1E3A0007F7BE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E203563E2BA1E3A3007F7BE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E20356412BA1E3A3007F7BE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E20356432BA1E3A3007F7BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E203564C2BA2AE51007F7BE1 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		E203564E2BA2B689007F7BE1 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		E20356502BA2BBE3007F7BE1 /* PostImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImages.swift; sourceTree = "<group>"; };
 		E20356582BA2F5B6007F7BE1 /* moon_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = moon_data.json; sourceTree = "<group>"; };
@@ -63,6 +62,9 @@
 		E2609DFD2BBF50D8005B5C32 /* RCCircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCCircularProgressBar.swift; sourceTree = "<group>"; };
 		E28EE5C52BA32613001CDEE2 /* Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
 		E28EE5CB2BA376BF001CDEE2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E2CC9B8B2BCEAEED006D0049 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
+		E2CC9B912BCEB1FF006D0049 /* RCTodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTodoListView.swift; sourceTree = "<group>"; };
+		E2CC9B952BCEB7A2006D0049 /* RCTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTodoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,8 +158,6 @@
 				E2609DEF2BBCC0C2005B5C32 /* ImageViews */,
 				E2609DEC2BBCC068005B5C32 /* Cells */,
 				E2609DEB2BBCC05D005B5C32 /* Labels */,
-				E20356392BA1E3A0007F7BE1 /* ViewController.swift */,
-				E203564C2BA2AE51007F7BE1 /* ImageCell.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -176,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				E2609DED2BBCC088005B5C32 /* DayCell.swift */,
+				E2CC9B8B2BCEAEED006D0049 /* TodoCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -199,9 +200,9 @@
 		E2609DF52BBEBA20005B5C32 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E2CC9B942BCEB749006D0049 /* WeekView */,
+				E2CC9B932BCEB732006D0049 /* TodoListView */,
 				E2609DF62BBEBA79005B5C32 /* RCHeaderTextView.swift */,
-				E2609DF82BBECD3A005B5C32 /* RCWeekCollectionView.swift */,
-				E2609DFA2BBED341005B5C32 /* RCWeekInfoView.swift */,
 				E2609DFD2BBF50D8005B5C32 /* RCCircularProgressBar.swift */,
 			);
 			path = Views;
@@ -220,6 +221,24 @@
 				E28EE5CB2BA376BF001CDEE2 /* Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E2CC9B932BCEB732006D0049 /* TodoListView */ = {
+			isa = PBXGroup;
+			children = (
+				E2CC9B912BCEB1FF006D0049 /* RCTodoListView.swift */,
+				E2CC9B952BCEB7A2006D0049 /* RCTodoView.swift */,
+			);
+			path = TodoListView;
+			sourceTree = "<group>";
+		};
+		E2CC9B942BCEB749006D0049 /* WeekView */ = {
+			isa = PBXGroup;
+			children = (
+				E2609DF82BBECD3A005B5C32 /* RCWeekCollectionView.swift */,
+				E2609DFA2BBED341005B5C32 /* RCWeekInfoView.swift */,
+			);
+			path = WeekView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,13 +321,11 @@
 				E2609DE32BBCB6C4005B5C32 /* RCTitleLabel.swift in Sources */,
 				E203565C2BA2F608007F7BE1 /* Day.swift in Sources */,
 				E2609DE12BBCB4CC005B5C32 /* ProgressVC.swift in Sources */,
-				E203563A2BA1E3A0007F7BE1 /* ViewController.swift in Sources */,
 				E28EE5C62BA32613001CDEE2 /* Month.swift in Sources */,
 				E2609DE52BBCB7A4005B5C32 /* RCBodyLabel.swift in Sources */,
 				E2609DEE2BBCC088005B5C32 /* DayCell.swift in Sources */,
 				E2609DE72BBCBF9E005B5C32 /* RCCaptionLabel.swift in Sources */,
 				E2609DF72BBEBA79005B5C32 /* RCHeaderTextView.swift in Sources */,
-				E203564D2BA2AE51007F7BE1 /* ImageCell.swift in Sources */,
 				E20356602BA2F676007F7BE1 /* DataStorage.swift in Sources */,
 				E28EE5CC2BA376BF001CDEE2 /* Extensions.swift in Sources */,
 				E2609DFB2BBED341005B5C32 /* RCWeekInfoView.swift in Sources */,
@@ -319,7 +336,10 @@
 				E20356362BA1E3A0007F7BE1 /* AppDelegate.swift in Sources */,
 				E2609DFE2BBF50D8005B5C32 /* RCCircularProgressBar.swift in Sources */,
 				E2609DF42BBCC6A7005B5C32 /* RCCalendarViewVC.swift in Sources */,
+				E2CC9B962BCEB7A2006D0049 /* RCTodoView.swift in Sources */,
 				E20356382BA1E3A0007F7BE1 /* SceneDelegate.swift in Sources */,
+				E2CC9B922BCEB1FF006D0049 /* RCTodoListView.swift in Sources */,
+				E2CC9B8C2BCEAEED006D0049 /* TodoCell.swift in Sources */,
 				E2609DF92BBECD3A005B5C32 /* RCWeekCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

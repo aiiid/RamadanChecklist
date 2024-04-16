@@ -12,6 +12,7 @@ class HomeVC: UIViewController {
     var collectionView: UICollectionView!
     let headerTexts = RCHeaderTextView()
     let weekInfo = RCWeekInfoView()
+    let todoList = RCTodoView()
     
     
     override func viewDidLoad() {
@@ -29,10 +30,12 @@ class HomeVC: UIViewController {
         
         view.addSubview(headerTexts)
         view.addSubview(weekInfo)
+        view.addSubview(todoList)
         
         weekInfo.setDateRange(from: "March 11", to: "April 10")
         
         headerTexts.translatesAutoresizingMaskIntoConstraints = false
+        todoList.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             headerTexts.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             headerTexts.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
@@ -42,7 +45,14 @@ class HomeVC: UIViewController {
             weekInfo.topAnchor.constraint(equalTo: headerTexts.bottomAnchor, constant: padding),
             weekInfo.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             weekInfo.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            weekInfo.heightAnchor.constraint(equalToConstant: 150) 
+            weekInfo.heightAnchor.constraint(equalToConstant: 150),
+            
+            todoList.topAnchor.constraint(equalTo: weekInfo.bottomAnchor, constant: padding), // Add top anchor
+            todoList.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            todoList.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            todoList.heightAnchor.constraint(equalToConstant: 150),
+            todoList.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
+           // todoList.heightAnchor.constraint(equalToConstant: 150),
         ])
         
     }

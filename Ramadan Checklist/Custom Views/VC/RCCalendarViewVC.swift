@@ -12,6 +12,8 @@ class RCCalendarViewVC: UIViewController {
     let bodyLabel = RCBodyLabel(textAlignment: .left)
     let captionLabel = RCCaptionLabel(textAlignment: .left)
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUIElements()
