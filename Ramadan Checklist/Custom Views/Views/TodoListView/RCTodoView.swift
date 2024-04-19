@@ -7,11 +7,13 @@
 
 import UIKit
 
+//whole ToDo containver View
+
 class RCTodoView: UIView {
 
     let titleLabel = RCTitleLabel(textAlignment: .left, fontSize: 20)
     let dayLabel = RCTitleLabel(textAlignment: .center, fontSize: 20)
-    let tableView = RCTodoListView()
+    let tableView = RCTodoList()
     
     override init(frame: CGRect) {
             super.init(frame: frame)
@@ -28,6 +30,7 @@ class RCTodoView: UIView {
             addSubview(dayLabel)
             addSubview(tableView)
 
+            backgroundColor = .systemTeal
             // Set up labels
             titleLabel.text = "Ramadan checklist"
             dayLabel.text = "day 2"

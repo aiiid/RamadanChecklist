@@ -7,7 +7,9 @@
 
 import UIKit
 
-class RCTodoListView: UITableView {
+//To Do list settings is here.
+
+class RCTodoList: UITableView {
     let testTasks = ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5"]
 
     override init(frame: CGRect, style: UITableView.Style) {
@@ -28,7 +30,7 @@ class RCTodoListView: UITableView {
     }
 }
 
-extension RCTodoListView: UITableViewDataSource{
+extension RCTodoList: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
@@ -43,8 +45,11 @@ extension RCTodoListView: UITableViewDataSource{
     
 }
 
-extension RCTodoListView: UITableViewDelegate{
+extension RCTodoList: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Row selected \(indexPath.row)")
+        guard let cell = tableView.cellForRow(at: indexPath) as? TodoCell else { return }
+        
+        cell.isChecked = !cell.isChecked
     }
 }

@@ -32,7 +32,7 @@
 		E28EE5C62BA32613001CDEE2 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28EE5C52BA32613001CDEE2 /* Month.swift */; };
 		E28EE5CC2BA376BF001CDEE2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28EE5CB2BA376BF001CDEE2 /* Extensions.swift */; };
 		E2CC9B8C2BCEAEED006D0049 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC9B8B2BCEAEED006D0049 /* TodoCell.swift */; };
-		E2CC9B922BCEB1FF006D0049 /* RCTodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC9B912BCEB1FF006D0049 /* RCTodoListView.swift */; };
+		E2CC9B922BCEB1FF006D0049 /* RCTodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC9B912BCEB1FF006D0049 /* RCTodoList.swift */; };
 		E2CC9B962BCEB7A2006D0049 /* RCTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC9B952BCEB7A2006D0049 /* RCTodoView.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +63,7 @@
 		E28EE5C52BA32613001CDEE2 /* Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
 		E28EE5CB2BA376BF001CDEE2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E2CC9B8B2BCEAEED006D0049 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
-		E2CC9B912BCEB1FF006D0049 /* RCTodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTodoListView.swift; sourceTree = "<group>"; };
+		E2CC9B912BCEB1FF006D0049 /* RCTodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTodoList.swift; sourceTree = "<group>"; };
 		E2CC9B952BCEB7A2006D0049 /* RCTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTodoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,9 +98,9 @@
 		E20356342BA1E3A0007F7BE1 /* Ramadan Checklist */ = {
 			isa = PBXGroup;
 			children = (
+				E28EE5CA2BA376AE001CDEE2 /* Extensions */,
 				E2609DEA2BBCC050005B5C32 /* Custom Views */,
 				E2609DE82BBCC00C005B5C32 /* Screens */,
-				E28EE5CA2BA376AE001CDEE2 /* Extensions */,
 				E203565A2BA2F5DE007F7BE1 /* DataAccess */,
 				E20356572BA2F51C007F7BE1 /* Network */,
 				E20356552BA2F4F9007F7BE1 /* Model */,
@@ -226,7 +226,7 @@
 		E2CC9B932BCEB732006D0049 /* TodoListView */ = {
 			isa = PBXGroup;
 			children = (
-				E2CC9B912BCEB1FF006D0049 /* RCTodoListView.swift */,
+				E2CC9B912BCEB1FF006D0049 /* RCTodoList.swift */,
 				E2CC9B952BCEB7A2006D0049 /* RCTodoView.swift */,
 			);
 			path = TodoListView;
@@ -338,7 +338,7 @@
 				E2609DF42BBCC6A7005B5C32 /* RCCalendarViewVC.swift in Sources */,
 				E2CC9B962BCEB7A2006D0049 /* RCTodoView.swift in Sources */,
 				E20356382BA1E3A0007F7BE1 /* SceneDelegate.swift in Sources */,
-				E2CC9B922BCEB1FF006D0049 /* RCTodoListView.swift in Sources */,
+				E2CC9B922BCEB1FF006D0049 /* RCTodoList.swift in Sources */,
 				E2CC9B8C2BCEAEED006D0049 /* TodoCell.swift in Sources */,
 				E2609DF92BBECD3A005B5C32 /* RCWeekCollectionView.swift in Sources */,
 			);
