@@ -34,6 +34,12 @@
 		E2CC9B8C2BCEAEED006D0049 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC9B8B2BCEAEED006D0049 /* TodoCell.swift */; };
 		E2CC9B922BCEB1FF006D0049 /* RCTodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC9B912BCEB1FF006D0049 /* RCTodoList.swift */; };
 		E2CC9B962BCEB7A2006D0049 /* RCTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC9B952BCEB7A2006D0049 /* RCTodoView.swift */; };
+		E2CC9B9B2BD3C5F2006D0049 /* TaskDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2CC9B992BD3C5F2006D0049 /* TaskDataModel.xcdatamodeld */; };
+		E2CC9BA72BD3CBDD006D0049 /* RamadanChecklist.json in Resources */ = {isa = PBXBuildFile; fileRef = E2CC9BA62BD3CBDD006D0049 /* RamadanChecklist.json */; };
+		E2CC9BAA2BD3CF9A006D0049 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC9BA92BD3CF9A006D0049 /* Task.swift */; };
+		E2CC9BAC2BD3CFC3006D0049 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC9BAB2BD3CFC3006D0049 /* Quote.swift */; };
+		E2CC9BAE2BD3D00E006D0049 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC9BAD2BD3D00E006D0049 /* JSONLoader.swift */; };
+		E2CC9BB12BD3D0E9006D0049 /* RamadanChecklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC9BB02BD3D0E9006D0049 /* RamadanChecklist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +71,12 @@
 		E2CC9B8B2BCEAEED006D0049 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
 		E2CC9B912BCEB1FF006D0049 /* RCTodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTodoList.swift; sourceTree = "<group>"; };
 		E2CC9B952BCEB7A2006D0049 /* RCTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTodoView.swift; sourceTree = "<group>"; };
+		E2CC9B9A2BD3C5F2006D0049 /* TaskDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskDataModel.xcdatamodel; sourceTree = "<group>"; };
+		E2CC9BA62BD3CBDD006D0049 /* RamadanChecklist.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RamadanChecklist.json; sourceTree = "<group>"; };
+		E2CC9BA92BD3CF9A006D0049 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		E2CC9BAB2BD3CFC3006D0049 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		E2CC9BAD2BD3D00E006D0049 /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		E2CC9BB02BD3D0E9006D0049 /* RamadanChecklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamadanChecklist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +110,11 @@
 		E20356342BA1E3A0007F7BE1 /* Ramadan Checklist */ = {
 			isa = PBXGroup;
 			children = (
+				E2CC9B982BD3C207006D0049 /* Data Model */,
 				E28EE5CA2BA376AE001CDEE2 /* Extensions */,
-				E2609DEA2BBCC050005B5C32 /* Custom Views */,
 				E2609DE82BBCC00C005B5C32 /* Screens */,
-				E203565A2BA2F5DE007F7BE1 /* DataAccess */,
-				E20356572BA2F51C007F7BE1 /* Network */,
-				E20356552BA2F4F9007F7BE1 /* Model */,
+				E2609DEA2BBCC050005B5C32 /* Custom Views */,
+				E2CC9B972BD3C1C1006D0049 /* OLD */,
 				E20356352BA1E3A0007F7BE1 /* AppDelegate.swift */,
 				E20356372BA1E3A0007F7BE1 /* SceneDelegate.swift */,
 				E203563E2BA1E3A3007F7BE1 /* Assets.xcassets */,
@@ -241,6 +252,61 @@
 			path = WeekView;
 			sourceTree = "<group>";
 		};
+		E2CC9B972BD3C1C1006D0049 /* OLD */ = {
+			isa = PBXGroup;
+			children = (
+				E203565A2BA2F5DE007F7BE1 /* DataAccess */,
+				E20356572BA2F51C007F7BE1 /* Network */,
+				E20356552BA2F4F9007F7BE1 /* Model */,
+			);
+			path = OLD;
+			sourceTree = "<group>";
+		};
+		E2CC9B982BD3C207006D0049 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2CC9BA52BD3CA88006D0049 /* TasksList */,
+				E2CC9BA42BD3C912006D0049 /* Entities */,
+				E2CC9B992BD3C5F2006D0049 /* TaskDataModel.xcdatamodeld */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		E2CC9BA42BD3C912006D0049 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E2CC9BA52BD3CA88006D0049 /* TasksList */ = {
+			isa = PBXGroup;
+			children = (
+				E2CC9BAF2BD3D0D8006D0049 /* Loader */,
+				E2CC9BA82BD3CF3D006D0049 /* Model */,
+				E2CC9BA62BD3CBDD006D0049 /* RamadanChecklist.json */,
+			);
+			path = TasksList;
+			sourceTree = "<group>";
+		};
+		E2CC9BA82BD3CF3D006D0049 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2CC9BA92BD3CF9A006D0049 /* Task.swift */,
+				E2CC9BAB2BD3CFC3006D0049 /* Quote.swift */,
+				E2CC9BB02BD3D0E9006D0049 /* RamadanChecklist.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2CC9BAF2BD3D0D8006D0049 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				E2CC9BAD2BD3D00E006D0049 /* JSONLoader.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,6 +374,7 @@
 				E20356592BA2F5B6007F7BE1 /* moon_data.json in Resources */,
 				E20356422BA1E3A3007F7BE1 /* LaunchScreen.storyboard in Resources */,
 				E203563F2BA1E3A3007F7BE1 /* Assets.xcassets in Resources */,
+				E2CC9BA72BD3CBDD006D0049 /* RamadanChecklist.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +385,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2CC9BAA2BD3CF9A006D0049 /* Task.swift in Sources */,
+				E2CC9B9B2BD3C5F2006D0049 /* TaskDataModel.xcdatamodeld in Sources */,
 				E2609DE32BBCB6C4005B5C32 /* RCTitleLabel.swift in Sources */,
 				E203565C2BA2F608007F7BE1 /* Day.swift in Sources */,
 				E2609DE12BBCB4CC005B5C32 /* ProgressVC.swift in Sources */,
@@ -333,6 +402,7 @@
 				E2609DDF2BBCB41A005B5C32 /* HomeVC.swift in Sources */,
 				E2609DF12BBCC0D9005B5C32 /* MoonPhaseView.swift in Sources */,
 				E20356512BA2BBE3007F7BE1 /* PostImages.swift in Sources */,
+				E2CC9BAE2BD3D00E006D0049 /* JSONLoader.swift in Sources */,
 				E20356362BA1E3A0007F7BE1 /* AppDelegate.swift in Sources */,
 				E2609DFE2BBF50D8005B5C32 /* RCCircularProgressBar.swift in Sources */,
 				E2609DF42BBCC6A7005B5C32 /* RCCalendarViewVC.swift in Sources */,
@@ -340,7 +410,9 @@
 				E20356382BA1E3A0007F7BE1 /* SceneDelegate.swift in Sources */,
 				E2CC9B922BCEB1FF006D0049 /* RCTodoList.swift in Sources */,
 				E2CC9B8C2BCEAEED006D0049 /* TodoCell.swift in Sources */,
+				E2CC9BAC2BD3CFC3006D0049 /* Quote.swift in Sources */,
 				E2609DF92BBECD3A005B5C32 /* RCWeekCollectionView.swift in Sources */,
+				E2CC9BB12BD3D0E9006D0049 /* RamadanChecklist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +644,19 @@
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		E2CC9B992BD3C5F2006D0049 /* TaskDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E2CC9B9A2BD3C5F2006D0049 /* TaskDataModel.xcdatamodel */,
+			);
+			currentVersion = E2CC9B9A2BD3C5F2006D0049 /* TaskDataModel.xcdatamodel */;
+			path = TaskDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E203562A2BA1E3A0007F7BE1 /* Project object */;
 }

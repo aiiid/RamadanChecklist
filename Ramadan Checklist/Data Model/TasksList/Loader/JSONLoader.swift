@@ -1,8 +1,8 @@
 //
-//  DataStorage.swift
+//  JSONLoader.swift
 //  Ramadan Checklist
 //
-//  Created by Ai Hawok on 14/03/2024.
+//  Created by Ai Hawok on 20/04/2024.
 //
 
 import Foundation
@@ -15,15 +15,15 @@ enum LoadError: Error {
 
 struct DataStorage{
     
-    func loadData() -> Result<Ramadan, LoadError> {
-        guard let url = Bundle.main.url(forResource: "moon_data", withExtension: ".json") else {
+    func loadData() -> Result<RamadanChecklist, LoadError> {
+        guard let url = Bundle.main.url(forResource: "RamadanChecklist", withExtension: ".json") else {
             return .failure(.fileNotFound)
         }
         do {
-                let data = try Data(contentsOf: url)   
+                let data = try Data(contentsOf: url)
                 let jsonDecoder = JSONDecoder()
-                let month = try jsonDecoder.decode(Ramadan.self, from: data)
-            return .success(month)
+                let checklist = try jsonDecoder.decode(RamadanChecklist.self, from: data)
+            return .success(checklist)
             } catch {
                 print("Error decoding Course data:", error)
                 return .failure(.decodingError(error))

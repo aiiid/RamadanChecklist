@@ -1,0 +1,52 @@
+{
+  "tasks": [
+    {
+      "title": "Suhoor",
+      "description": "Wake up for Suhoor"
+    },
+    {
+      "title": "Shukr",
+      "description": "Express gratitude"
+    },
+    {
+      "title": "Read Quran",
+      "description": "15-90 minutes"
+    },
+    {
+      "title": "Namaz",
+      "description": "5 times prayer"
+    },
+    {
+      "title": "ilm علم",
+      "description": "15-90 minutes"
+    },
+    {
+      "title": "Dhikr",
+      "description": "100 - 1000 times"
+    },
+    {
+      "title": "Tarawih",
+      "description": "Pray Tarawih"
+    },
+    {
+      "title": "Read Quran",
+      "description": "15-90 minutes"
+    },
+    {
+      "title": "Sadaqah",
+      "description": "100 - 1000 tenge"
+    },
+    {
+      "title": "Asma",
+      "description": "Learn 3 beautiful names of Allah"
+    },
+    {
+      "title": "Deeds",
+      "description": "1 good Deed"
+    }
+  ],
+  "quote": {
+    "title": "إِنَّ أَحَبَّ الأَعْمَالِ إِلَى اللَّهِ أَدْوَمُهَا وَإِنْ قَلَّ",
+    "description": "Verily, the most beloved deeds to Allah are those that are consistent, even if they are small."
+  }
+}

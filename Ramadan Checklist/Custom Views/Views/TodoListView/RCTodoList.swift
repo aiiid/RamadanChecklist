@@ -10,10 +10,12 @@ import UIKit
 //To Do list settings is here.
 
 class RCTodoList: UITableView {
-    let testTasks = ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5"]
-
+    //let testTasks = ["Task 1", "Task 2", "Task 3", "Task 4", "Task 5"]
+    var tasks = [Task]()
+    
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
+        loadData()
         setupTableView()
     }
     
@@ -28,16 +30,27 @@ class RCTodoList: UITableView {
         delegate = self
         register(TodoCell.self,forCellReuseIdentifier: TodoCell.reuseIdentifier)
     }
+    
+    private func loadData(){
+        let dataStorage = DataStorage()
+        switch dataStorage.loadData() {
+        case .success(let loadedTasks):
+            tasks = loadedTasks.tasks
+            reloadData()
+        case .failure(let error):
+            print("Error loading data:", error)
+        }
+    }
 }
 
 extension RCTodoList: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return tasks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TodoCell.reuseIdentifier, for: indexPath) as! TodoCell
-        cell.set(taskLabel: testTasks[indexPath.row])
+        cell.set(taskLabel: tasks[indexPath.row].title)
         
         return cell
     }
