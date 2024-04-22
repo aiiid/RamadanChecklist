@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="23C71" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
     <entity name="Completion" representedClassName="Completion" syncable="YES" codeGenerationType="class">
-        <attribute name="date" attributeType="Date" defaultDateTimeInterval="735471840" usesScalarValueType="NO"/>
-        <attribute name="isCompleted" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="isCompleted" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <relationship name="task" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CoreDataTask" inverseName="completions" inverseEntity="CoreDataTask"/>
     </entity>
     <entity name="CoreDataTask" representedClassName="CoreDataTask" syncable="YES" codeGenerationType="class">
-        <attribute name="id" attributeType="String" defaultValueString="0"/>
-        <attribute name="title" attributeType="String" defaultValueString="title"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
         <relationship name="completions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Completion" inverseName="task" inverseEntity="Completion"/>
     </entity>
 </model>

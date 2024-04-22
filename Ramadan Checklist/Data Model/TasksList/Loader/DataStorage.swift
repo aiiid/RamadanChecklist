@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreData
 
 enum LoadError: Error {
     case fileNotFound
@@ -14,8 +15,7 @@ enum LoadError: Error {
 }
 
 struct DataStorage{
-    
-    func loadData() -> Result<RamadanChecklist, LoadError> {
+    func loadJsonData() -> Result<RamadanChecklist, LoadError> {
         guard let url = Bundle.main.url(forResource: "RamadanChecklist", withExtension: ".json") else {
             return .failure(.fileNotFound)
         }
@@ -29,6 +29,17 @@ struct DataStorage{
                 return .failure(.decodingError(error))
             }
         }
+    
+    func fetchTasksFromCoreData(context: NSManagedObjectContext) -> [CoreDataTask] {
+        let fetchRequest: NSFetchRequest<CoreDataTask> = CoreDataTask.fetchRequest()
+        do {
+            let tasks = try context.fetch(fetchRequest)
+            return tasks
+        } catch {
+            print("Error fetching tasks from Core Data: \(error.localizedDescription)")
+            return []
+        }
+    }
         
     }
     

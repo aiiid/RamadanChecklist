@@ -1,41 +1,63 @@
-//
-//  AppDelegate.swift
-//  Ramadan Checklist
-//
-//  Created by Ai Hawok on 13/03/2024.
-//
-
 import UIKit
 import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
+    let dataStorage = DataStorage()
     
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        setupCoreData()
         return true
     }
     
-    // MARK: UISceneSession Lifecycle
-    
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    func applicationWillTerminate(_ application: UIApplication) {
+        self.saveContext()
     }
     
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    // MARK: - User Defaults, CoreData setup
+    private func setupCoreData() {
+        let isFirstRun = UserDefaults.standard.bool(forKey: "hasLaunchedBefore")
+        print("inside firstRun")
+        if !isFirstRun {
+            // Load the data from JSON as it's the first run
+            loadDataFromJSON()
+
+            // Set the flag to true to indicate that the app has launched before
+            UserDefaults.standard.set(true, forKey: "hasLaunchedBefore")
+            UserDefaults.standard.synchronize() // Synchronize user defaults
+        }
     }
+    
+    private func loadDataFromJSON(){
+        // Load your JSON file and parse it
+        // Create Core Data objects and save them
+        let context = persistentContainer.viewContext
+        print("im here")
+        var tasks: [Task] = []
+        
+        switch dataStorage.loadJsonData() {
+        case .success(let result):
+            print(result)
+            tasks = result.tasks
+        case .failure(let error):
+            print(error.localizedDescription)
+        }
+        
+        for taskInfo in tasks {
+            let newTask = CoreDataTask(context: context)
+            newTask.title = taskInfo.title
+            newTask.id = UUID().uuidString
+        }
+        
+        saveContext()
+    }
+    
     
     // MARK: - Core Data stack
-    
     lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "TaskDataModel")
+        let container = NSPersistentContainer(name: "SecondModel")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
@@ -44,10 +66,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return container
     }()
     
-    // MARK: - Core Data Saving support
-    
     func saveContext () {
         let context = persistentContainer.viewContext
+        
         if context.hasChanges {
             do {
                 try context.save()
@@ -58,7 +79,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 }
-
-
-
-
