@@ -12,10 +12,7 @@
 		E203563F2BA1E3A3007F7BE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E203563E2BA1E3A3007F7BE1 /* Assets.xcassets */; };
 		E20356422BA1E3A3007F7BE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E20356402BA1E3A3007F7BE1 /* LaunchScreen.storyboard */; };
 		E203564B2BA2AD0F007F7BE1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E203564A2BA2AD0F007F7BE1 /* SnapKit */; };
-		E203564F2BA2B689007F7BE1 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203564E2BA2B689007F7BE1 /* APIManager.swift */; };
-		E20356512BA2BBE3007F7BE1 /* PostImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20356502BA2BBE3007F7BE1 /* PostImages.swift */; };
 		E20356592BA2F5B6007F7BE1 /* moon_data.json in Resources */ = {isa = PBXBuildFile; fileRef = E20356582BA2F5B6007F7BE1 /* moon_data.json */; };
-		E203565C2BA2F608007F7BE1 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203565B2BA2F608007F7BE1 /* Day.swift */; };
 		E20356602BA2F676007F7BE1 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203565F2BA2F676007F7BE1 /* DataStorage.swift */; };
 		E2609DDF2BBCB41A005B5C32 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2609DDE2BBCB41A005B5C32 /* HomeVC.swift */; };
 		E2609DE12BBCB4CC005B5C32 /* ProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2609DE02BBCB4CC005B5C32 /* ProgressVC.swift */; };
@@ -29,7 +26,7 @@
 		E2609DF92BBECD3A005B5C32 /* RCWeekCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2609DF82BBECD3A005B5C32 /* RCWeekCollectionView.swift */; };
 		E2609DFB2BBED341005B5C32 /* RCWeekInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2609DFA2BBED341005B5C32 /* RCWeekInfoView.swift */; };
 		E2609DFE2BBF50D8005B5C32 /* RCCircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2609DFD2BBF50D8005B5C32 /* RCCircularProgressBar.swift */; };
-		E28EE5C62BA32613001CDEE2 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28EE5C52BA32613001CDEE2 /* Month.swift */; };
+		E262AE852BD8E0140086AA57 /* MainCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E262AE842BD8E0140086AA57 /* MainCollectionView.swift */; };
 		E28EE5CC2BA376BF001CDEE2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28EE5CB2BA376BF001CDEE2 /* Extensions.swift */; };
 		E2CC9B8C2BCEAEED006D0049 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC9B8B2BCEAEED006D0049 /* TodoCell.swift */; };
 		E2CC9B922BCEB1FF006D0049 /* RCTodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CC9B912BCEB1FF006D0049 /* RCTodoList.swift */; };
@@ -43,10 +40,7 @@
 		E203563E2BA1E3A3007F7BE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E20356412BA1E3A3007F7BE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E20356432BA1E3A3007F7BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E203564E2BA2B689007F7BE1 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		E20356502BA2BBE3007F7BE1 /* PostImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImages.swift; sourceTree = "<group>"; };
 		E20356582BA2F5B6007F7BE1 /* moon_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = moon_data.json; sourceTree = "<group>"; };
-		E203565B2BA2F608007F7BE1 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		E203565F2BA2F676007F7BE1 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		E2609DDE2BBCB41A005B5C32 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		E2609DE02BBCB4CC005B5C32 /* ProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressVC.swift; sourceTree = "<group>"; };
@@ -60,7 +54,7 @@
 		E2609DF82BBECD3A005B5C32 /* RCWeekCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCWeekCollectionView.swift; sourceTree = "<group>"; };
 		E2609DFA2BBED341005B5C32 /* RCWeekInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCWeekInfoView.swift; sourceTree = "<group>"; };
 		E2609DFD2BBF50D8005B5C32 /* RCCircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCCircularProgressBar.swift; sourceTree = "<group>"; };
-		E28EE5C52BA32613001CDEE2 /* Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
+		E262AE842BD8E0140086AA57 /* MainCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainCollectionView.swift; path = "Ramadan Checklist/Custom Views/Views/MainCollectionView.swift"; sourceTree = SOURCE_ROOT; };
 		E28EE5CB2BA376BF001CDEE2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E2CC9B8B2BCEAEED006D0049 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
 		E2CC9B912BCEB1FF006D0049 /* RCTodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTodoList.swift; sourceTree = "<group>"; };
@@ -102,8 +96,6 @@
 				E2609DEA2BBCC050005B5C32 /* Custom Views */,
 				E2609DE82BBCC00C005B5C32 /* Screens */,
 				E203565A2BA2F5DE007F7BE1 /* DataAccess */,
-				E20356572BA2F51C007F7BE1 /* Network */,
-				E20356552BA2F4F9007F7BE1 /* Model */,
 				E20356352BA1E3A0007F7BE1 /* AppDelegate.swift */,
 				E20356372BA1E3A0007F7BE1 /* SceneDelegate.swift */,
 				E203563E2BA1E3A3007F7BE1 /* Assets.xcassets */,
@@ -111,24 +103,6 @@
 				E20356432BA1E3A3007F7BE1 /* Info.plist */,
 			);
 			path = "Ramadan Checklist";
-			sourceTree = "<group>";
-		};
-		E20356552BA2F4F9007F7BE1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				E203565B2BA2F608007F7BE1 /* Day.swift */,
-				E28EE5C52BA32613001CDEE2 /* Month.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		E20356572BA2F51C007F7BE1 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				E203564E2BA2B689007F7BE1 /* APIManager.swift */,
-				E20356502BA2BBE3007F7BE1 /* PostImages.swift */,
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		E203565A2BA2F5DE007F7BE1 /* DataAccess */ = {
@@ -237,6 +211,7 @@
 			children = (
 				E2609DF82BBECD3A005B5C32 /* RCWeekCollectionView.swift */,
 				E2609DFA2BBED341005B5C32 /* RCWeekInfoView.swift */,
+				E262AE842BD8E0140086AA57 /* MainCollectionView.swift */,
 			);
 			path = WeekView;
 			sourceTree = "<group>";
@@ -319,20 +294,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2609DE32BBCB6C4005B5C32 /* RCTitleLabel.swift in Sources */,
-				E203565C2BA2F608007F7BE1 /* Day.swift in Sources */,
 				E2609DE12BBCB4CC005B5C32 /* ProgressVC.swift in Sources */,
-				E28EE5C62BA32613001CDEE2 /* Month.swift in Sources */,
 				E2609DE52BBCB7A4005B5C32 /* RCBodyLabel.swift in Sources */,
 				E2609DEE2BBCC088005B5C32 /* DayCell.swift in Sources */,
 				E2609DE72BBCBF9E005B5C32 /* RCCaptionLabel.swift in Sources */,
 				E2609DF72BBEBA79005B5C32 /* RCHeaderTextView.swift in Sources */,
 				E20356602BA2F676007F7BE1 /* DataStorage.swift in Sources */,
+				E262AE852BD8E0140086AA57 /* MainCollectionView.swift in Sources */,
 				E28EE5CC2BA376BF001CDEE2 /* Extensions.swift in Sources */,
 				E2609DFB2BBED341005B5C32 /* RCWeekInfoView.swift in Sources */,
-				E203564F2BA2B689007F7BE1 /* APIManager.swift in Sources */,
 				E2609DDF2BBCB41A005B5C32 /* HomeVC.swift in Sources */,
 				E2609DF12BBCC0D9005B5C32 /* MoonPhaseView.swift in Sources */,
-				E20356512BA2BBE3007F7BE1 /* PostImages.swift in Sources */,
 				E20356362BA1E3A0007F7BE1 /* AppDelegate.swift in Sources */,
 				E2609DFE2BBF50D8005B5C32 /* RCCircularProgressBar.swift in Sources */,
 				E2609DF42BBCC6A7005B5C32 /* RCCalendarViewVC.swift in Sources */,

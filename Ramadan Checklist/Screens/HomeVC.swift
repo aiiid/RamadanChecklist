@@ -9,7 +9,7 @@ import UIKit
 
 class HomeVC: UIViewController {
     
-    var collectionView: UICollectionView!
+    var collectionView: MainCollectionView!
     let headerTexts = RCHeaderTextView()
     let weekInfo = RCWeekInfoView()
     let todoList = RCTodoView()
@@ -21,40 +21,22 @@ class HomeVC: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         //title = "Hello, test"
         headerTexts.set(user: "Aida")
-        configurePage()
+        setupCollectionView()
     }
     
    
-    func configurePage(){
-        let padding: CGFloat = 20
-        
-        view.addSubview(headerTexts)
-        view.addSubview(weekInfo)
-        view.addSubview(todoList)
-        
-        weekInfo.setDateRange(from: "March 11", to: "April 10")
-        
-        headerTexts.translatesAutoresizingMaskIntoConstraints = false
-        todoList.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            headerTexts.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            headerTexts.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
-            headerTexts.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
-            headerTexts.heightAnchor.constraint(equalToConstant: 80),
+    private func setupCollectionView() {
+            collectionView = MainCollectionView()
+            view.addSubview(collectionView)
             
-            weekInfo.topAnchor.constraint(equalTo: headerTexts.bottomAnchor, constant: padding),
-            weekInfo.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            weekInfo.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            weekInfo.heightAnchor.constraint(equalToConstant: 150),
-            
-            todoList.topAnchor.constraint(equalTo: weekInfo.bottomAnchor, constant: 40), // Add top anchor
-            todoList.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            todoList.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            todoList.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
-           
-        ])
-        
-    }
+            collectionView.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate([
+                collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
+                collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            ])
+        }
     
     
 
